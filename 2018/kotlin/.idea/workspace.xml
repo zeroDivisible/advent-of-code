@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0649b587-27de-49c6-86bf-42b0874b53d6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1OgsU14ZNvzafmnqKTP8DVXO94j" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546525361804" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="zerodi.adventofcode" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Kotlin.Day06Kt">
+    <configuration name="GraphTest.letterValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kotlin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zerodi.adventofcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zerodi.adventofcode" />
+      <option name="MAIN_CLASS_NAME" value="zerodi.adventofcode.GraphTest" />
+      <option name="METHOD_NAME" value="letterValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day06Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day06Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Day06Kt" />
+        <item itemvalue="JUnit.GraphTest.letterValue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0649b587-27de-49c6-86bf-42b0874b53d6" name="Default Changelist" comment="" />
+      <created>1545758566440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545758566440</updated>
+      <workItem from="1545758569868" duration="123000" />
+      <workItem from="1545758757608" duration="4354000" />
+      <workItem from="1545821357482" duration="632000" />
+      <workItem from="1545823508662" duration="8210000" />
+      <workItem from="1546139141891" duration="167000" />
+      <workItem from="1546250876702" duration="955000" />
+      <workItem from="1550222767001" duration="419000" />
+      <workItem from="1550256802707" duration="151000" />
+      <workItem from="1551209215359" duration="472000" />
+      <workItem from="1551218846342" duration="208000" />
+      <workItem from="1551306265022" duration="157000" />
+      <workItem from="1551801787709" duration="136000" />
+      <workItem from="1551898444297" duration="194000" />
+      <workItem from="1553759389590" duration="485000" />
+      <workItem from="1558737642625" duration="242000" />
+      <workItem from="1558738319703" duration="52000" />
+      <workItem from="1558738402390" duration="95000" />
+      <workItem from="1558738521456" duration="337000" />
+      <workItem from="1559066940062" duration="79000" />
+      <workItem from="1559067065812" duration="526000" />
+      <workItem from="1560443572188" duration="13000" />
+      <workItem from="1562017776211" duration="7102000" />
+      <workItem from="1562978772972" duration="392000" />
+      <workItem from="1563563992432" duration="532000" />
+      <workItem from="1563834763683" duration="371000" />
+      <workItem from="1564092389877" duration="595000" />
+      <workItem from="1564239447599" duration="598000" />
+      <workItem from="1564410592791" duration="539000" />
+      <workItem from="1565107174905" duration="480000" />
+      <workItem from="1565817778924" duration="598000" />
+      <workItem from="1566493923674" duration="1011000" />
+      <workItem from="1568656751145" duration="66000" />
+      <workItem from="1568656907936" duration="73000" />
+      <workItem from="1568657003285" duration="416000" />
+      <workItem from="1569264587937" duration="598000" />
+      <workItem from="1569478865371" duration="950000" />
+      <workItem from="1571266258710" duration="733000" />
+      <workItem from="1572521329497" duration="462000" />
+      <workItem from="1572570082895" duration="311000" />
+      <workItem from="1573852375414" duration="495000" />
+      <workItem from="1574186967961" duration="824000" />
+      <workItem from="1574892078429" duration="465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 24m 27s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 25m 07s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 25m 28s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 27m 24s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 27m 31s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 28m 20s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 28m 36s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphTest_letterValue - 2018.12.27 at 09h 28m 55s.xml">
+      <configuration name="GraphTest.letterValue" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/zerodi/adventofcode/Graph.kt</url>
+          <line>73</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>letter.first().dec() - 63</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>letter.first().dec()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sorted.joinToString(&quot;&quot;)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sorted.joinToString()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sorted.joinToString {  }</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(nodes - dependencies).list</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>nodes - candidates.toHashSet()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>candidates.toHashSet()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>edges.values.map { it }</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>KotlinJavaRuntime</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
