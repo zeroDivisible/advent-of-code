@@ -1,5 +1,6 @@
 use std::{
-    collections::HashMap,
+    collections::HashSet,
+    fmt,
     fs::File,
     io::{prelude::*, BufReader},
     path::Path,
@@ -22,10 +23,19 @@ struct WirePath {
     pub length: i32
 }
 
-#[derive(Debug, PartialEq, Eq, Hash, Clone)]
+#[derive(Debug, PartialEq, Eq, Hash, Clone, Copy)]
 struct Point {
     pub x: i32,
     pub y: i32
+}
+
+impl fmt::Display for Point {
+    fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
+        fmt.write_str(
+            format!("[{}, {}]", &self.x, &self.y).as_str()
+        );
+        Ok(())
+    }
 }
 
 impl WirePath {
@@ -47,7 +57,6 @@ impl WirePath {
 }
 
 fn prepare_input(input: &Vec<String>) -> Vec<Vec<WirePath>> {
-    let line = input.first().unwrap();
     let mut output = Vec::<Vec<WirePath>>::new();
 
     for line in input {
@@ -77,45 +86,35 @@ fn extend_point(point: &Point, dir: &Direction) -> Point {
     }
 }
 
-fn lay_wire(plane: &mut HashMap<Point, Vec<i32>>, origin: Point, path: &Vec<WirePath>, wire_id: i32) {
-    let mut current_point = origin.clone();
+fn lay_wire(origin: Point, path: &Vec<WirePath>) -> Vec<Point> {
+    let mut current_point: Point = origin;
+    let mut laid_wire = Vec::new();
 
     for path in path {
         for _x in 1..(path.length + 1) {
-            current_point = extend_point(&current_point.clone(), &path.dir);
-
-            if plane.contains_key(&current_point) {
-                if !plane.get(&current_point).unwrap().contains(&wire_id) {
-                    plane.get_mut(&current_point).unwrap().push(wire_id);
-                }
-            } else {
-                plane.insert(current_point.clone(), vec![wire_id]);
-            }
+            current_point = extend_point(&current_point, &path.dir);
+            laid_wire.push(current_point);
         }
     }
+
+    laid_wire
 }
 
-fn part_01(input: &Vec<Vec<WirePath>>) -> () {
+fn part_01(input: &Vec<Vec<WirePath>>) {
     const ORIGIN: Point = Point { x: 0, y: 0 };
-    let mut wire_id = 1;
-    let mut plane = HashMap::new();
 
-    for path in input {
-        lay_wire(&mut plane, ORIGIN, path, wire_id);
-        wire_id += 1;
-    }
+    let first_wire  = lay_wire(ORIGIN, input.get(0).unwrap());
+    let second_wire = lay_wire(ORIGIN, input.get(1).unwrap());
 
-    let mut points: Vec<Point> = Vec::new();
+    let set_first: HashSet<_> = first_wire.iter().collect();
+    let set_second: HashSet<_> = second_wire.iter().collect();
 
-    for (k,v) in plane {
-        if v.len() > 1 {
-            points.push(k);
-        }
-    }
-
-    dbg!(points.iter()
+    let manhattan  = set_first.intersection(&set_second)
         .map(|p| p.x.abs() + p.y.abs())
-        .min_by(|a,b| a.partial_cmp(b).expect("Tried to compare a NaN")).unwrap());
+        .min_by(|a,b| a.partial_cmp(b).expect("Tried to compare a NaN")).unwrap();
+
+    println!("smallest distance = {}", manhattan);
+    //dbg!(matching.count());
 }
 
 //fn part_02(input: &Vec<String>) -> () {
@@ -187,13 +186,16 @@ mod tests {
         let input = prepare_input(&vec!["R2,U1".to_string()]);
         let parsed_input = input.first().unwrap();
         let origin = Point { x: 0, y: 0 };
-        let wire_id = 1;
-        let mut plane = HashMap::new();
 
-        lay_wire(&mut plane, origin, parsed_input, wire_id);
+        let wire = lay_wire(origin, parsed_input);
 
-        assert!(plane.contains_key(&Point { x: 1, y: 0}));
-        assert!(plane.contains_key(&Point { x: 2, y: 0}));
-        assert!(plane.contains_key(&Point { x: 2, y: 1}));
+        assert_eq!(
+            wire,
+            vec![
+                Point { x: 1, y: 0 },
+                Point { x: 2, y: 0 },
+                Point { x: 2, y: 1 }
+            ]
+        )
     }
 }
