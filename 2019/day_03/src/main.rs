@@ -114,18 +114,42 @@ fn part_01(input: &Vec<Vec<WirePath>>) {
         .min_by(|a,b| a.partial_cmp(b).expect("Tried to compare a NaN")).unwrap();
 
     println!("smallest distance = {}", manhattan);
-    //dbg!(matching.count());
 }
 
-//fn part_02(input: &Vec<String>) -> () {
-//}
+fn part_02(input: &Vec<Vec<WirePath>>) {
+    const ORIGIN: Point = Point { x: 0, y: 0 };
+
+    let first_wire  = lay_wire(ORIGIN, input.get(0).unwrap());
+    let second_wire = lay_wire(ORIGIN, input.get(1).unwrap());
+
+
+    let set_first: HashSet<_> = first_wire.iter().collect();
+    let set_second: HashSet<_> = second_wire.iter().collect();
+
+    let common_points: Vec<_>  = set_first.intersection(&set_second)
+        .collect();
+
+    let mut fewest_steps = 4000000000;
+
+    for point in common_points {
+        let current =
+            first_wire.iter().position(|p| &p == point ).unwrap() +
+            second_wire.iter().position(|p| &p == point ).unwrap() + 2;
+
+        if current < fewest_steps {
+            fewest_steps = current;
+        }
+    };
+
+    println!("smallest distance = {}", fewest_steps);
+}
 
 fn main() {
     let input = lines_from_file("input/input.txt");
     let parsed = prepare_input(&input);
 
     part_01(&parsed);
-    //part_02(&input);
+    part_02(&parsed);
 }
 
 #[cfg(test)]
