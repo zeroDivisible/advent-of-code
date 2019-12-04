@@ -129,12 +129,12 @@ fn part_02(input: &Vec<Vec<WirePath>>) {
     let common_points: Vec<_>  = set_first.intersection(&set_second)
         .collect();
 
-    let mut fewest_steps = 4000000000;
+    let mut fewest_steps = std::u32::MAX;
 
     for point in common_points {
         let current =
-            first_wire.iter().position(|p| &p == point ).unwrap() +
-            second_wire.iter().position(|p| &p == point ).unwrap() + 2;
+            (first_wire.iter().position(|p| &p == point ).unwrap() +
+             second_wire.iter().position(|p| &p == point ).unwrap() + 2) as u32;
 
         if current < fewest_steps {
             fewest_steps = current;
